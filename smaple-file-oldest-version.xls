@@ -1,0 +1,2651 @@
+
+
+      <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+      <HTML>
+
+      <HEAD>
+
+      <style type="text/css">
+
+      <!--table
+
+      {mso-displayed-decimal-separator:"\.";
+
+      mso-displayed-thousand-separator:"\,";}
+
+  @page
+      {mso-header-data:"&C&\0022Times New Roman\,Regular\0022&12&A";
+      mso-footer-data:"&C&\0022Times New Roman\,Regular\0022&12Page &P";
+      margin:1.05in .79in 1.05in .79in;
+      mso-header-margin:.79in;
+      mso-footer-margin:.79in;
+      mso-page-numbers-start:1;
+      mso-paper-source:A4;}
+
+      {mso-height-source:auto;}
+  col
+      {mso-width-source:auto;}
+  br
+      {mso-data-placement:same-cell;}
+  .style0
+      {mso-number-format:"0.#0";
+      mso-ignore:padding;
+      mso-background-source:auto;
+      mso-protection:locked visible;
+      mso-style-name:Normal;
+      mso-style-id:0;
+      mso-font-charset:0;
+      mso-rotate:0;
+      mso-pattern:auto;
+      padding-top:1px;
+      padding-right:1px;
+      padding-left:1px;
+      font-size:10.0pt;
+      font-weight:400;
+      font-style:normal;
+      font-family:Bookman Old, sans-serif;
+      text-decoration:none;
+      text-align:LEFT;
+      vertical-align:middle;
+      border:none;
+      white-space:nowrap;}
+
+
+
+  td
+      {mso-style-parent:style0;
+      color:#00008B;
+      border-top:.5pt solid windowtext;
+      border-right:1.0pt solid windowtext;
+      border-bottom:.5pt solid windowtext;
+      border-left:1.0pt solid windowtext;}
+
+
+  .title
+      {mso-style-parent:style0;
+      font-weight:700;
+      text-align:left;
+      color:#000000;
+      mso-number-format:general;
+      border:1.0pt solid windowtext;}
+
+
+  .head
+      {mso-style-parent:style0;
+      font-weight:700;
+      mso-number-format:general;
+      text-align:center;
+      color:#000000;
+      border:1.0pt solid windowtext;}
+
+  .count
+      {mso-style-parent:style0;
+      font-weight:700;
+      mso-font-charset:0;
+      color:#FF0000;
+      border:1.0pt solid windowtext;}
+
+   -->
+    </style>
+
+    <TITLE>
+                       Profile List
+    </TITLE>
+
+    <META NAME="Author" CONTENT="Tekla Structures">
+
+    </HEAD>
+
+    <BODY BGCOLOR="WHITE" TEXT="Comic Sans MS"  FONT="Comic Sans MS" LINK="#0000FF" ALINK="#FF0000" VLINK="#800080">
+
+    <META NAME="Generator" CONTENT="Tekla Structures">
+
+
+
+
+
+
+
+
+
+
+
+
+    <TD  class=title >&nbsp;</TD>
+
+    <TABLE  COLOUR ="BLACK" ALIGN="Center"  style="border-collapse:collapse">
+
+    <TR  ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=5  style='border:none;mso-ignore:colspan'></td>
+
+    <TD class=title >&nbsp;Project Number:&nbsp;</TD>
+
+    <TD style='text-align:left;border:1.0pt solid windowtext' mso-number-format:"0.#0" >500-103           </TD></TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=5  style='border:none;mso-ignore:colspan'></td>
+
+    <TD class=title>&nbsp;Project&nbsp;</TD>
+
+    <TD class=title style='border:1.0pt solid windowtext'>                     Tekla Model           &nbsp;</TD></TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=5  style='border:none;mso-ignore:colspan'></td>
+
+    <TD  class=title >&nbsp;Date</TD>
+
+    <TD style='border:1.0pt solid windowtext;mso-number-format:"\[ENG\]\[$-409\]mmmm\\ d\\\,\\ yyyy\;\@"'>
+
+                                                                          11/04/2024&nbsp;14:36:42   &nbsp;</TD></TR>
+    </TABLE>
+
+
+   <TABLE  ALIGN="CENTER"HEIGHT="100"   style="border-collapse:collapse">
+
+   <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+   <TD colspan=2  style='border:none;mso-ignore:colspan'></td>
+
+   <TD class=head>                             PartPos                  </TD>
+
+   <TD class=head>                             Profile                  </TD>
+
+   <TD class=head>                             No.                      </TD>
+
+   <TD class=head>                             Material                 </TD>
+
+   <TD class=head>                             Length (mm)              </TD>
+
+   <TD class=head>                             Weight(kg)               </TD>
+
+   <TD class=head>                             Weight T (kg)            </TD>
+
+   </TR>
+
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b1              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS100*50*3.0   &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7362            &nbsp;</TD>
+
+    <TD>                                           49.4            &nbsp;</TD>
+
+    <TD>                                           197.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b3              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           20              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2289            &nbsp;</TD>
+
+    <TD>                                           12.1            &nbsp;</TD>
+
+    <TD>                                           242.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b4              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           20              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2702            &nbsp;</TD>
+
+    <TD>                                           14.3            &nbsp;</TD>
+
+    <TD>                                           285.9           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b8              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2668            &nbsp;</TD>
+
+    <TD>                                           22.8            &nbsp;</TD>
+
+    <TD>                                           45.7            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b9              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           22              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2570            &nbsp;</TD>
+
+    <TD>                                           22.0            &nbsp;</TD>
+
+    <TD>                                           483.8           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b10             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           16              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2711            &nbsp;</TD>
+
+    <TD>                                           23.2            &nbsp;</TD>
+
+    <TD>                                           371.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b13             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS200*100*5.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11500           &nbsp;</TD>
+
+    <TD>                                           259.1           &nbsp;</TD>
+
+    <TD>                                           518.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b15             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11500           &nbsp;</TD>
+
+    <TD>                                           137.2           &nbsp;</TD>
+
+    <TD>                                           823.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b17             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2105            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           72.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b19             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           10              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1883            &nbsp;</TD>
+
+    <TD>                                           10.0            &nbsp;</TD>
+
+    <TD>                                           99.6            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b20             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS70*70*3.0    &nbsp;</TD>
+
+    <TD>                                           10              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1883            &nbsp;</TD>
+
+    <TD>                                           11.8            &nbsp;</TD>
+
+    <TD>                                           118.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b21             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1190            &nbsp;</TD>
+
+    <TD>                                           6.3             &nbsp;</TD>
+
+    <TD>                                           37.8            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b22             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2252            &nbsp;</TD>
+
+    <TD>                                           11.9            &nbsp;</TD>
+
+    <TD>                                           71.5            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b23             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           94              &nbsp;</TD>
+
+    <TD>                                           0.5             &nbsp;</TD>
+
+    <TD>                                           3.0             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b24             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2115            &nbsp;</TD>
+
+    <TD>                                           11.2            &nbsp;</TD>
+
+    <TD>                                           67.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b25             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1142            &nbsp;</TD>
+
+    <TD>                                           6.0             &nbsp;</TD>
+
+    <TD>                                           36.3            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b26             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           90              &nbsp;</TD>
+
+    <TD>                                           0.5             &nbsp;</TD>
+
+    <TD>                                           2.9             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b27             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8000            &nbsp;</TD>
+
+    <TD>                                           95.5            &nbsp;</TD>
+
+    <TD>                                           572.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b28             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2702            &nbsp;</TD>
+
+    <TD>                                           14.3            &nbsp;</TD>
+
+    <TD>                                           28.6            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b29             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           22              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2604            &nbsp;</TD>
+
+    <TD>                                           13.8            &nbsp;</TD>
+
+    <TD>                                           303.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b30             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS160*80*5.0   &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8000            &nbsp;</TD>
+
+    <TD>                                           142.6           &nbsp;</TD>
+
+    <TD>                                           285.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b31             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS160*80*5.0   &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11500           &nbsp;</TD>
+
+    <TD>                                           204.9           &nbsp;</TD>
+
+    <TD>                                           409.8           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b32             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS160*80*5.0   &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11198           &nbsp;</TD>
+
+    <TD>                                           199.5           &nbsp;</TD>
+
+    <TD>                                           399.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b33             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           5               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11194           &nbsp;</TD>
+
+    <TD>                                           133.6           &nbsp;</TD>
+
+    <TD>                                           667.8           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b34             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           15              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2747            &nbsp;</TD>
+
+    <TD>                                           14.5            &nbsp;</TD>
+
+    <TD>                                           218.0           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b35             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2223            &nbsp;</TD>
+
+    <TD>                                           11.8            &nbsp;</TD>
+
+    <TD>                                           23.5            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b36             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2285            &nbsp;</TD>
+
+    <TD>                                           12.1            &nbsp;</TD>
+
+    <TD>                                           24.2            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b37             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS70*70*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1904            &nbsp;</TD>
+
+    <TD>                                           12.0            &nbsp;</TD>
+
+    <TD>                                           71.8            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b38             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS70*70*3.0    &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2154            &nbsp;</TD>
+
+    <TD>                                           13.5            &nbsp;</TD>
+
+    <TD>                                           81.2            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b39             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS200*100*5.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8000            &nbsp;</TD>
+
+    <TD>                                           180.2           &nbsp;</TD>
+
+    <TD>                                           360.5           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b40             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS200*100*5.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11200           &nbsp;</TD>
+
+    <TD>                                           252.3           &nbsp;</TD>
+
+    <TD>                                           504.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b44             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS150*150*5.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8000            &nbsp;</TD>
+
+    <TD>                                           180.2           &nbsp;</TD>
+
+    <TD>                                           360.5           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b45             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS150*150*5.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11500           &nbsp;</TD>
+
+    <TD>                                           259.1           &nbsp;</TD>
+
+    <TD>                                           518.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b46             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS150*150*5.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11198           &nbsp;</TD>
+
+    <TD>                                           252.3           &nbsp;</TD>
+
+    <TD>                                           504.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b47             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2712            &nbsp;</TD>
+
+    <TD>                                           23.2            &nbsp;</TD>
+
+    <TD>                                           46.4            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b48             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           22              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2613            &nbsp;</TD>
+
+    <TD>                                           22.4            &nbsp;</TD>
+
+    <TD>                                           491.8           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b49             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           16              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2755            &nbsp;</TD>
+
+    <TD>                                           23.6            &nbsp;</TD>
+
+    <TD>                                           377.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b50             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS100*50*3.0   &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7337            &nbsp;</TD>
+
+    <TD>                                           49.2            &nbsp;</TD>
+
+    <TD>                                           196.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b54             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*80*3.6    &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2223            &nbsp;</TD>
+
+    <TD>                                           19.0            &nbsp;</TD>
+
+    <TD>                                           76.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b60             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2741            &nbsp;</TD>
+
+    <TD>                                           14.5            &nbsp;</TD>
+
+    <TD>                                           14.5            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b66             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS20*20*2.0    &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11913           &nbsp;</TD>
+
+    <TD>                                           13.3            &nbsp;</TD>
+
+    <TD>                                           53.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b68             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS20*20*2.0    &nbsp;</TD>
+
+    <TD>                                           11              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1944            &nbsp;</TD>
+
+    <TD>                                           2.2             &nbsp;</TD>
+
+    <TD>                                           23.8            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b72             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 CHS26.9*3.2     &nbsp;</TD>
+
+    <TD>                                           8               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           540             &nbsp;</TD>
+
+    <TD>                                           1.0             &nbsp;</TD>
+
+    <TD>                                           8.1             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b73             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 CHS33.7*2.6     &nbsp;</TD>
+
+    <TD>                                           35              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           520             &nbsp;</TD>
+
+    <TD>                                           1.0             &nbsp;</TD>
+
+    <TD>                                           36.3            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b78             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS40*40*3.0    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1100            &nbsp;</TD>
+
+    <TD>                                           3.7             &nbsp;</TD>
+
+    <TD>                                           7.5             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b79             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS40*40*3.0    &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1460            &nbsp;</TD>
+
+    <TD>                                           5.0             &nbsp;</TD>
+
+    <TD>                                           5.0             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b80             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS40*40*3.0    &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1500            &nbsp;</TD>
+
+    <TD>                                           5.1             &nbsp;</TD>
+
+    <TD>                                           20.4            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b81             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS40*40*3.0    &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1460            &nbsp;</TD>
+
+    <TD>                                           5.0             &nbsp;</TD>
+
+    <TD>                                           5.0             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b82             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 L40*40*4        &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           490             &nbsp;</TD>
+
+    <TD>                                           1.2             &nbsp;</TD>
+
+    <TD>                                           2.3             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b85             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9548            &nbsp;</TD>
+
+    <TD>                                           113.9           &nbsp;</TD>
+
+    <TD>                                           113.9           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b86             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8715            &nbsp;</TD>
+
+    <TD>                                           104.0           &nbsp;</TD>
+
+    <TD>                                           104.0           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b87             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8717            &nbsp;</TD>
+
+    <TD>                                           104.0           &nbsp;</TD>
+
+    <TD>                                           208.0           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b88             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8698            &nbsp;</TD>
+
+    <TD>                                           103.8           &nbsp;</TD>
+
+    <TD>                                           103.8           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b89             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9627            &nbsp;</TD>
+
+    <TD>                                           114.9           &nbsp;</TD>
+
+    <TD>                                           114.9           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b90             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9532            &nbsp;</TD>
+
+    <TD>                                           113.7           &nbsp;</TD>
+
+    <TD>                                           113.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b91             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8712            &nbsp;</TD>
+
+    <TD>                                           104.0           &nbsp;</TD>
+
+    <TD>                                           104.0           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b92             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9659            &nbsp;</TD>
+
+    <TD>                                           115.2           &nbsp;</TD>
+
+    <TD>                                           115.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b93             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6981            &nbsp;</TD>
+
+    <TD>                                           83.3            &nbsp;</TD>
+
+    <TD>                                           166.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b95             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6959            &nbsp;</TD>
+
+    <TD>                                           83.0            &nbsp;</TD>
+
+    <TD>                                           83.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b97             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*3.6       &nbsp;</TD>
+
+    <TD>                                           6               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6939            &nbsp;</TD>
+
+    <TD>                                           59.7            &nbsp;</TD>
+
+    <TD>                                           358.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b99             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*3.6       &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6904            &nbsp;</TD>
+
+    <TD>                                           59.4            &nbsp;</TD>
+
+    <TD>                                           237.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b100            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*3.6       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6879            &nbsp;</TD>
+
+    <TD>                                           59.2            &nbsp;</TD>
+
+    <TD>                                           118.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b103            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*3.6       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7085            &nbsp;</TD>
+
+    <TD>                                           61.0            &nbsp;</TD>
+
+    <TD>                                           122.0           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b104            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS80*3.6       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7060            &nbsp;</TD>
+
+    <TD>                                           60.8            &nbsp;</TD>
+
+    <TD>                                           60.8            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b110            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10216           &nbsp;</TD>
+
+    <TD>                                           121.9           &nbsp;</TD>
+
+    <TD>                                           121.9           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b111            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10107           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b112            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10108           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b113            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10158           &nbsp;</TD>
+
+    <TD>                                           121.2           &nbsp;</TD>
+
+    <TD>                                           121.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b114            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10115           &nbsp;</TD>
+
+    <TD>                                           120.7           &nbsp;</TD>
+
+    <TD>                                           120.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b115            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10079           &nbsp;</TD>
+
+    <TD>                                           120.3           &nbsp;</TD>
+
+    <TD>                                           120.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b116            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10106           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b117            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10159           &nbsp;</TD>
+
+    <TD>                                           121.2           &nbsp;</TD>
+
+    <TD>                                           121.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b118            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10116           &nbsp;</TD>
+
+    <TD>                                           120.7           &nbsp;</TD>
+
+    <TD>                                           120.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b119            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10112           &nbsp;</TD>
+
+    <TD>                                           120.7           &nbsp;</TD>
+
+    <TD>                                           120.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b120            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10166           &nbsp;</TD>
+
+    <TD>                                           121.3           &nbsp;</TD>
+
+    <TD>                                           121.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b121            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10111           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b122            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10075           &nbsp;</TD>
+
+    <TD>                                           120.2           &nbsp;</TD>
+
+    <TD>                                           120.2           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b123            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           10111           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+
+    <TD>                                           120.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b126            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           3               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4869            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           54.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b127            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4861            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           36.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b128            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4856            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b129            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4876            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           36.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b130            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4896            &nbsp;</TD>
+
+    <TD>                                           18.1            &nbsp;</TD>
+
+    <TD>                                           18.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b131            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4898            &nbsp;</TD>
+
+    <TD>                                           18.1            &nbsp;</TD>
+
+    <TD>                                           36.2            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b132            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4829            &nbsp;</TD>
+
+    <TD>                                           17.9            &nbsp;</TD>
+
+    <TD>                                           17.9            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b133            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           3               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4826            &nbsp;</TD>
+
+    <TD>                                           17.9            &nbsp;</TD>
+
+    <TD>                                           53.6            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b134            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4870            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           36.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b137            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           12              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7110            &nbsp;</TD>
+
+    <TD>                                           84.8            &nbsp;</TD>
+
+    <TD>                                           1018.0          &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b141            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 L60*6           &nbsp;</TD>
+
+    <TD>                                           12              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           224             &nbsp;</TD>
+
+    <TD>                                           1.2             &nbsp;</TD>
+
+    <TD>                                           14.6            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b146            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4914            &nbsp;</TD>
+
+    <TD>                                           18.2            &nbsp;</TD>
+
+    <TD>                                           18.2            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b147            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4902            &nbsp;</TD>
+
+    <TD>                                           18.1            &nbsp;</TD>
+
+    <TD>                                           36.3            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b153            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8699            &nbsp;</TD>
+
+    <TD>                                           103.8           &nbsp;</TD>
+
+    <TD>                                           103.8           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b154            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4880            &nbsp;</TD>
+
+    <TD>                                           18.1            &nbsp;</TD>
+
+    <TD>                                           18.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b155            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4868            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           36.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b156            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4862            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b157            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6972            &nbsp;</TD>
+
+    <TD>                                           83.2            &nbsp;</TD>
+
+    <TD>                                           83.2            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b158            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6957            &nbsp;</TD>
+
+    <TD>                                           83.0            &nbsp;</TD>
+
+    <TD>                                           83.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b163            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS100*50*3.0   &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7312            &nbsp;</TD>
+
+    <TD>                                           49.0            &nbsp;</TD>
+
+    <TD>                                           98.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b164            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS60*60*3.0    &nbsp;</TD>
+
+    <TD>                                           20              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2706            &nbsp;</TD>
+
+    <TD>                                           14.3            &nbsp;</TD>
+
+    <TD>                                           286.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b165            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6968            &nbsp;</TD>
+
+    <TD>                                           83.1            &nbsp;</TD>
+
+    <TD>                                           83.1            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b166            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 L50*5           &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1975            &nbsp;</TD>
+
+    <TD>                                           7.4             &nbsp;</TD>
+
+    <TD>                                           14.9            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b168            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6974            &nbsp;</TD>
+
+    <TD>                                           83.2            &nbsp;</TD>
+
+    <TD>                                           166.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b169            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS100*50*3.0   &nbsp;</TD>
+
+    <TD>                                           10              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           6920            &nbsp;</TD>
+
+    <TD>                                           46.4            &nbsp;</TD>
+
+    <TD>                                           463.9           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b170            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11237           &nbsp;</TD>
+
+    <TD>                                           134.1           &nbsp;</TD>
+
+    <TD>                                           134.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b171            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           3               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4865            &nbsp;</TD>
+
+    <TD>                                           18.0            &nbsp;</TD>
+
+    <TD>                                           54.0            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 b172            &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS50*2.5       &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           4917            &nbsp;</TD>
+
+    <TD>                                           18.2            &nbsp;</TD>
+
+    <TD>                                           18.2            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c1              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8000            &nbsp;</TD>
+
+    <TD>                                           482.3           &nbsp;</TD>
+
+    <TD>                                           482.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c2              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS100*100*4.0  &nbsp;</TD>
+
+    <TD>                                           8               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2812            &nbsp;</TD>
+
+    <TD>                                           33.6            &nbsp;</TD>
+
+    <TD>                                           268.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c3              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9831            &nbsp;</TD>
+
+    <TD>                                           592.7           &nbsp;</TD>
+
+    <TD>                                           592.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c4              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS150*100*5.0  &nbsp;</TD>
+
+    <TD>                                           4               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2812            &nbsp;</TD>
+
+    <TD>                                           52.3            &nbsp;</TD>
+
+    <TD>                                           209.3           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c5              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS20*20*2.0    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11913           &nbsp;</TD>
+
+    <TD>                                           13.3            &nbsp;</TD>
+
+    <TD>                                           26.6            &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c6              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS80*40*3.0    &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           11909           &nbsp;</TD>
+
+    <TD>                                           63.6            &nbsp;</TD>
+
+    <TD>                                           127.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c7              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 RHS40*20*2      &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           2000            &nbsp;</TD>
+
+    <TD>                                           3.5             &nbsp;</TD>
+
+    <TD>                                           7.0             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c8              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 L40*40*4        &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           490             &nbsp;</TD>
+
+    <TD>                                           1.2             &nbsp;</TD>
+
+    <TD>                                           1.2             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c9              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 L40*40*4        &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           1100            &nbsp;</TD>
+
+    <TD>                                           2.6             &nbsp;</TD>
+
+    <TD>                                           2.6             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c10             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 L40*40*4        &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           490             &nbsp;</TD>
+
+    <TD>                                           1.2             &nbsp;</TD>
+
+    <TD>                                           1.2             &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c11             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7931            &nbsp;</TD>
+
+    <TD>                                           478.1           &nbsp;</TD>
+
+    <TD>                                           478.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c12             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7863            &nbsp;</TD>
+
+    <TD>                                           474.0           &nbsp;</TD>
+
+    <TD>                                           948.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c13             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7840            &nbsp;</TD>
+
+    <TD>                                           472.7           &nbsp;</TD>
+
+    <TD>                                           472.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c14             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           7974            &nbsp;</TD>
+
+    <TD>                                           480.7           &nbsp;</TD>
+
+    <TD>                                           480.7           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c15             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9780            &nbsp;</TD>
+
+    <TD>                                           589.6           &nbsp;</TD>
+
+    <TD>                                           589.6           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c16             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9689            &nbsp;</TD>
+
+    <TD>                                           584.1           &nbsp;</TD>
+
+    <TD>                                           584.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c17             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9660            &nbsp;</TD>
+
+    <TD>                                           582.4           &nbsp;</TD>
+
+    <TD>                                           582.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c18             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9743            &nbsp;</TD>
+
+    <TD>                                           587.4           &nbsp;</TD>
+
+    <TD>                                           587.4           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 c19             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 SHS250*250*8.0  &nbsp;</TD>
+
+    <TD>                                           1               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9838            &nbsp;</TD>
+
+    <TD>                                           593.1           &nbsp;</TD>
+
+    <TD>                                           593.1           &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 p2              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 ZZ260-2-25-67   &nbsp;</TD>
+
+    <TD>                                           25              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9275            &nbsp;</TD>
+
+    <TD>                                           63.5            &nbsp;</TD>
+
+    <TD>                                           1587.2          &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 p3              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 ZZ260-2-25-67   &nbsp;</TD>
+
+    <TD>                                           23              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           9300            &nbsp;</TD>
+
+    <TD>                                           63.7            &nbsp;</TD>
+
+    <TD>                                           1464.2          &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 p7              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 ZZ260-2-25-67   &nbsp;</TD>
+
+    <TD>                                           75              &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8610            &nbsp;</TD>
+
+    <TD>                                           58.9            &nbsp;</TD>
+
+    <TD>                                           4420.3          &nbsp;</TD>
+    </TR>
+
+    <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+    <TD colspan=2  style='border:none;mso-ignore:colspan'></TD>
+
+    <TD mso-number-format:general>                 p11             &nbsp;</TD>
+
+    <TD mso-number-format:general>                 ZZ260-2-25-67   &nbsp;</TD>
+
+    <TD>                                           2               &nbsp;</TD>
+
+    <TD mso-number-format:general>                 S235            &nbsp;</TD>
+
+    <TD>                                           8310            &nbsp;</TD>
+
+    <TD>                                           56.9            &nbsp;</TD>
+
+    <TD>                                           113.8           &nbsp;</TD>
+    </TR>
+     <P > &nbsp;    </P >
+
+
+   <TR ALIGN="LEFT" VALIGN="MIDDLE">
+
+   <TD colspan=2  style='border:none;mso-ignore:colspan'></td>
+
+   <TD class=count style='mso-number-format:general'>           Total for             &nbsp; &nbsp;</TD>
+
+   <TD class=count>&nbsp;                                                                    &nbsp;</TD>
+
+   <TD class=count>                                             643                               </TD>
+
+   <TD class=count style='mso-number-format:general'>           members                           </TD>
+
+   <TD class=count>                                                                               </TD>
+
+   <TD class=count>                                                                               </TD>
+
+   <TD class=count>                                             31663.3                           </TD>
+
+   </TR>
+
+   </TABLE>
+
+   </BR>
+
+   </BR>
+
+   </body>
+
+   </html>
