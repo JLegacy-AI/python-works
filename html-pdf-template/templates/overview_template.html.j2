@@ -1,0 +1,85 @@
+<style>
+  @font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+    
+  body{
+    padding: 50px;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1#overview {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  #overview-table {
+    margin-bottom: 30px;
+    width: 600px;
+  }
+
+  #overview-table td, #overview-table th {
+    text-align: left;
+  }
+
+  #overview-table td:first-child {
+    font-weight: 600;
+    width: 200px;
+  }
+
+  #overview-table td:last-child {
+    word-wrap: break-word;
+    width: 400px
+  }
+ 
+ 
+</style>
+
+<h1 id="overview">Overview and Summary</h1>
+<table id="overview-table">
+  <tbody>
+    <tr>
+      <td>Project Name</td>
+      <td>{{ projectName }}</td>
+    </tr>
+    <tr>
+      <td>Date Generated</td>
+      <td>{{ dateGenerated }}</td>
+    </tr>
+    <tr>
+      <td>Total Profiles Type</td>
+      <td>{{ totalProfiles }}</td>
+    </tr>
+    <tr>
+      <td>Total Length (m)</td>
+      <td>{{ totalLengthM }}</td>
+    </tr>
+    <tr>
+      <td>Total Waste (m)</td>
+      <td>{{ totalWasteM }}</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr style="margin-top: 40px;">
+      <td>Total Cuts</td>
+      <td>{{ totalCuts }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,91 @@
+<style>
+  /* Embed Poppins Font */
+  @font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  /* Reset and General Font */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Body Padding */
+  body {
+    padding: 50px;
+  }
+
+  /* Heading Styling */
+  h1#cutlist {
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* Cutlist Table Styling */
+  #cutlist-table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    display: inline-table; /* Makes table width adjust based on content */
+    min-width: 50pt; /* Ensures the table has a minimum width, adjust as needed */
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  /* Table Header Styling */
+
+  /* Table Cell Styling */
+  #cutlist-table tbody tr td {
+    border-bottom: 1px solid black;
+    text-align: left;
+    padding: 3px 0px 0px 0px;
+    width: 100px;
+  }
+
+  /* Ensuring Proper Spacing for Column Headers */
+  .cutlist-head {
+    padding: 1px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+</style>
+
+<h1 id="cutlist">Material and Cut List</h1>
+<table id="cutlist-table">
+  <thead>
+    <tr>
+      <th class="cutlist-head">Profile Type</th>
+      <th class="cutlist-head">Stock Length (mm)</th>
+      <th class="cutlist-head">Quantity</th>
+      <th class="cutlist-head">Total Length (m)</th>
+      <th class="cutlist-head">Est Waste (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in data %}
+      <tr>
+        <td class="bold" style="width: 120px">{{ row[0] }}</td>
+        <td style="width: 120px">{{ row[1] }}</td>
+        <td style="width: 70px">{{ row[2] }}</td>
+        <td style="width: 100px">{{ row[3] }}</td>
+        <td style="width: 80px">{{ row[4] }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
