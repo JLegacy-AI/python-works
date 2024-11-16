@@ -1,0 +1,107 @@
+<style>
+  @font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  /* Heading Styling */
+  h1.stock {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* Overview Table Styling */
+  .overview-table {
+    margin-bottom: 30px;
+    width: 300px;
+  }
+
+  .overview-table td {
+    border-bottom: 1px solid black;
+    padding: 3px 0px 0px 0px;
+    text-align: left;
+  }
+
+  .overview-table td:first-child {
+    width: 100px;
+  }
+
+  .overview-table td:last-child {
+    padding-left: 20px;
+    width: 200px
+  }
+
+  /* Stock Table Styling */
+  .stock-table {
+    margin-bottom: 50px;
+    border-collapse: collapse;
+  }
+
+  .stock-table th, .stock-table td {
+    border-bottom: 1px solid black;
+    padding: 2px;
+    text-align: left;
+  }
+
+  .stock-table th {
+    font-weight: bold;
+  }
+
+  .stock-table td {
+    width: 130px;
+  }
+</style>
+
+<h1 class="stock">Cut List and Optimizations</h1>
+{% for profileCut in data %}
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; ">Stock Profile POS</td>
+        <td>{{ profileCut["stockProfilePOS"] }}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; ">Profile Type</td>
+        <td>{{ profileCut["profileType"] }}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; ">Stock Length</td>
+        <td>{{ profileCut["stockLength"] }}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; ">Waste (mm)</td>
+        <td>{{ profileCut["wasteMM"] }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="text-align: right; padding-right: 5px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cut in profileCut["cuts"] %}
+        <tr>
+          <td>{{ cut["posNumber"] }}</td>
+          <td>{{ cut["cutLength"] }}</td>
+          <td style="text-align: right; padding-right: 5px;">{{ cut["quantity"] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endfor %}

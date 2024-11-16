@@ -1,0 +1,902 @@
+[
+    {
+        "posNumber": "b1",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "948 mm"
+    },
+    {
+        "posNumber": "b6",
+        "profile": "RHS60*5",
+        "quantity": 14,
+        "length": "280 mm"
+    },
+    {
+        "posNumber": "b7",
+        "profile": "RHS120*80*5",
+        "quantity": 28,
+        "length": "526 mm"
+    },
+    {
+        "posNumber": "b8",
+        "profile": "IPE240",
+        "quantity": 14,
+        "length": "296 mm"
+    },
+    {
+        "posNumber": "b9",
+        "profile": "HEA220",
+        "quantity": 12,
+        "length": "121 mm"
+    },
+    {
+        "posNumber": "b10",
+        "profile": "HEA220",
+        "quantity": 12,
+        "length": "165 mm"
+    },
+    {
+        "posNumber": "b11",
+        "profile": "UPN300",
+        "quantity": 14,
+        "length": "4961 mm"
+    },
+    {
+        "posNumber": "b12",
+        "profile": "RHS120*5",
+        "quantity": 8,
+        "length": "1573 mm"
+    },
+    {
+        "posNumber": "b13",
+        "profile": "RHS120*5",
+        "quantity": 1,
+        "length": "1570 mm"
+    },
+    {
+        "posNumber": "b14",
+        "profile": "RHS120*5",
+        "quantity": 4,
+        "length": "1573 mm"
+    },
+    {
+        "posNumber": "b15",
+        "profile": "RHS120*5",
+        "quantity": 1,
+        "length": "1573 mm"
+    },
+    {
+        "posNumber": "b17",
+        "profile": "HEA220",
+        "quantity": 4,
+        "length": "1880 mm"
+    },
+    {
+        "posNumber": "b20",
+        "profile": "HEA260",
+        "quantity": 2,
+        "length": "400 mm"
+    },
+    {
+        "posNumber": "b21",
+        "profile": "HEA260",
+        "quantity": 2,
+        "length": "356 mm"
+    },
+    {
+        "posNumber": "b22",
+        "profile": "HEA260",
+        "quantity": 2,
+        "length": "123 mm"
+    },
+    {
+        "posNumber": "b23",
+        "profile": "HEA260",
+        "quantity": 2,
+        "length": "167 mm"
+    },
+    {
+        "posNumber": "b24",
+        "profile": "HEA220",
+        "quantity": 6,
+        "length": "493 mm"
+    },
+    {
+        "posNumber": "b30",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "802 mm"
+    },
+    {
+        "posNumber": "b31",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "801 mm"
+    },
+    {
+        "posNumber": "b33",
+        "profile": "RHS80*3.6",
+        "quantity": 4,
+        "length": "343 mm"
+    },
+    {
+        "posNumber": "b34",
+        "profile": "RHS80*3.6",
+        "quantity": 4,
+        "length": "389 mm"
+    },
+    {
+        "posNumber": "b38",
+        "profile": "RHS60*120*3.6",
+        "quantity": 5,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b39",
+        "profile": "RHS60*120*3.6",
+        "quantity": 1,
+        "length": "5435 mm"
+    },
+    {
+        "posNumber": "b40",
+        "profile": "RHS60*120*3.6",
+        "quantity": 1,
+        "length": "5437 mm"
+    },
+    {
+        "posNumber": "b41",
+        "profile": "RHS60*120*3.6",
+        "quantity": 1,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b42",
+        "profile": "RHS120*5",
+        "quantity": 14,
+        "length": "5390 mm"
+    },
+    {
+        "posNumber": "b43",
+        "profile": "RHS120*5",
+        "quantity": 4,
+        "length": "5175 mm"
+    },
+    {
+        "posNumber": "b44",
+        "profile": "RHS120*5",
+        "quantity": 6,
+        "length": "5177 mm"
+    },
+    {
+        "posNumber": "b45",
+        "profile": "RHS250*150*6.3",
+        "quantity": 7,
+        "length": "5386 mm"
+    },
+    {
+        "posNumber": "b46",
+        "profile": "RHS250*150*6.3",
+        "quantity": 2,
+        "length": "5171 mm"
+    },
+    {
+        "posNumber": "b47",
+        "profile": "RHS250*150*6.3",
+        "quantity": 2,
+        "length": "5173 mm"
+    },
+    {
+        "posNumber": "b48",
+        "profile": "RHS250*150*6.3",
+        "quantity": 1,
+        "length": "5386 mm"
+    },
+    {
+        "posNumber": "b49",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "446 mm"
+    },
+    {
+        "posNumber": "b50",
+        "profile": "RHS120*80*5",
+        "quantity": 5,
+        "length": "446 mm"
+    },
+    {
+        "posNumber": "b51",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "446 mm"
+    },
+    {
+        "posNumber": "b52",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b53",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5435 mm"
+    },
+    {
+        "posNumber": "b54",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5437 mm"
+    },
+    {
+        "posNumber": "b55",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b56",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b57",
+        "profile": "RHS120*80*5",
+        "quantity": 3,
+        "length": "5460 mm"
+    },
+    {
+        "posNumber": "b58",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5440 mm"
+    },
+    {
+        "posNumber": "b59",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5245 mm"
+    },
+    {
+        "posNumber": "b60",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5247 mm"
+    },
+    {
+        "posNumber": "b64",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "5605 mm"
+    },
+    {
+        "posNumber": "b65",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "5520 mm"
+    },
+    {
+        "posNumber": "b66",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "5325 mm"
+    },
+    {
+        "posNumber": "b67",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "5327 mm"
+    },
+    {
+        "posNumber": "b68",
+        "profile": "RHS120*80*5",
+        "quantity": 4,
+        "length": "5540 mm"
+    },
+    {
+        "posNumber": "b69",
+        "profile": "RHS40*3.2",
+        "quantity": 4,
+        "length": "5600 mm"
+    },
+    {
+        "posNumber": "b70",
+        "profile": "RHS40*3.2",
+        "quantity": 2,
+        "length": "5405 mm"
+    },
+    {
+        "posNumber": "b71",
+        "profile": "RHS40*3.2",
+        "quantity": 2,
+        "length": "5407 mm"
+    },
+    {
+        "posNumber": "b73",
+        "profile": "L70*7",
+        "quantity": 7,
+        "length": "90 mm"
+    },
+    {
+        "posNumber": "b74",
+        "profile": "RHS50*5",
+        "quantity": 96,
+        "length": "320 mm"
+    },
+    {
+        "posNumber": "b76",
+        "profile": "RHS150*6.3",
+        "quantity": 4,
+        "length": "5390 mm"
+    },
+    {
+        "posNumber": "b77",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "633 mm"
+    },
+    {
+        "posNumber": "b78",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "659 mm"
+    },
+    {
+        "posNumber": "b79",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "695 mm"
+    },
+    {
+        "posNumber": "b80",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "720 mm"
+    },
+    {
+        "posNumber": "b81",
+        "profile": "RHS80*3.6",
+        "quantity": 12,
+        "length": "356 mm"
+    },
+    {
+        "posNumber": "b83",
+        "profile": "RHS80*3.6",
+        "quantity": 8,
+        "length": "948 mm"
+    },
+    {
+        "posNumber": "b85",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "974 mm"
+    },
+    {
+        "posNumber": "b86",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "663 mm"
+    },
+    {
+        "posNumber": "b87",
+        "profile": "RHS200*100*6.3",
+        "quantity": 1,
+        "length": "726 mm"
+    },
+    {
+        "posNumber": "b88",
+        "profile": "RHS200*100*6.3",
+        "quantity": 4,
+        "length": "731 mm"
+    },
+    {
+        "posNumber": "b89",
+        "profile": "RHS200*100*6.3",
+        "quantity": 4,
+        "length": "726 mm"
+    },
+    {
+        "posNumber": "b91",
+        "profile": "RHS120*5",
+        "quantity": 2,
+        "length": "731 mm"
+    },
+    {
+        "posNumber": "b92",
+        "profile": "RHS160*80*5",
+        "quantity": 2,
+        "length": "731 mm"
+    },
+    {
+        "posNumber": "b93",
+        "profile": "RHS120*5",
+        "quantity": 2,
+        "length": "725 mm"
+    },
+    {
+        "posNumber": "b94",
+        "profile": "RHS160*80*5",
+        "quantity": 2,
+        "length": "725 mm"
+    },
+    {
+        "posNumber": "b97",
+        "profile": "RHS60*120*3.6",
+        "quantity": 1,
+        "length": "5435 mm"
+    },
+    {
+        "posNumber": "b98",
+        "profile": "RHS60*120*3.6",
+        "quantity": 1,
+        "length": "5437 mm"
+    },
+    {
+        "posNumber": "b99",
+        "profile": "RHS120*80*5",
+        "quantity": 5,
+        "length": "456 mm"
+    },
+    {
+        "posNumber": "b100",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "456 mm"
+    },
+    {
+        "posNumber": "b101",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b102",
+        "profile": "RHS80*120*5",
+        "quantity": 3,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b103",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5435 mm"
+    },
+    {
+        "posNumber": "b104",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5437 mm"
+    },
+    {
+        "posNumber": "b105",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5390 mm"
+    },
+    {
+        "posNumber": "b106",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5440 mm"
+    },
+    {
+        "posNumber": "b107",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5245 mm"
+    },
+    {
+        "posNumber": "b108",
+        "profile": "RHS80*120*5",
+        "quantity": 1,
+        "length": "5247 mm"
+    },
+    {
+        "posNumber": "b109",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5460 mm"
+    },
+    {
+        "posNumber": "b114",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5605 mm"
+    },
+    {
+        "posNumber": "b115",
+        "profile": "RHS80*120*5",
+        "quantity": 4,
+        "length": "5540 mm"
+    },
+    {
+        "posNumber": "b116",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5327 mm"
+    },
+    {
+        "posNumber": "b117",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5325 mm"
+    },
+    {
+        "posNumber": "b118",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5520 mm"
+    },
+    {
+        "posNumber": "b120",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "616 mm"
+    },
+    {
+        "posNumber": "b121",
+        "profile": "RHS200*100*6.3",
+        "quantity": 2,
+        "length": "634 mm"
+    },
+    {
+        "posNumber": "b123",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "781 mm"
+    },
+    {
+        "posNumber": "b124",
+        "profile": "RHS200*100*6.3",
+        "quantity": 2,
+        "length": "664 mm"
+    },
+    {
+        "posNumber": "b128",
+        "profile": "RHS150*6.3",
+        "quantity": 1,
+        "length": "1080 mm"
+    },
+    {
+        "posNumber": "b137",
+        "profile": "RHS40*3.2",
+        "quantity": 36,
+        "length": "141 mm"
+    },
+    {
+        "posNumber": "b181",
+        "profile": "RHS60*120*3.6",
+        "quantity": 2,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b182",
+        "profile": "RHS120*80*5",
+        "quantity": 1,
+        "length": "5650 mm"
+    },
+    {
+        "posNumber": "b183",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "766 mm"
+    },
+    {
+        "posNumber": "b184",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "764 mm"
+    },
+    {
+        "posNumber": "b185",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "748 mm"
+    },
+    {
+        "posNumber": "b190",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "806 mm"
+    },
+    {
+        "posNumber": "b1000",
+        "profile": "RHS200*100*6.3",
+        "quantity": 2,
+        "length": "635 mm"
+    },
+    {
+        "posNumber": "b5001",
+        "profile": "RHS40*3.2",
+        "quantity": 4,
+        "length": "5620 mm"
+    },
+    {
+        "posNumber": "b5008",
+        "profile": "RHS100*5",
+        "quantity": 4,
+        "length": "530 mm"
+    },
+    {
+        "posNumber": "b5009",
+        "profile": "RHS100*5",
+        "quantity": 4,
+        "length": "590 mm"
+    },
+    {
+        "posNumber": "b5014",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "766 mm"
+    },
+    {
+        "posNumber": "b5015",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "772 mm"
+    },
+    {
+        "posNumber": "b5016",
+        "profile": "RHS40*3.2",
+        "quantity": 43,
+        "length": "144 mm"
+    },
+    {
+        "posNumber": "b5017",
+        "profile": "RHS40*3.2",
+        "quantity": 3,
+        "length": "142 mm"
+    },
+    {
+        "posNumber": "b5018",
+        "profile": "RHS40*3.2",
+        "quantity": 2,
+        "length": "144 mm"
+    },
+    {
+        "posNumber": "b5019",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "617 mm"
+    },
+    {
+        "posNumber": "b5020",
+        "profile": "RHS80*3.6",
+        "quantity": 4,
+        "length": "356 mm"
+    },
+    {
+        "posNumber": "b5021",
+        "profile": "RHS80*3.6",
+        "quantity": 4,
+        "length": "356 mm"
+    },
+    {
+        "posNumber": "b5022",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "614 mm"
+    },
+    {
+        "posNumber": "b5023",
+        "profile": "RHS80*3.6",
+        "quantity": 3,
+        "length": "948 mm"
+    },
+    {
+        "posNumber": "b5024",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "948 mm"
+    },
+    {
+        "posNumber": "b5025",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "615 mm"
+    },
+    {
+        "posNumber": "b5026",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "617 mm"
+    },
+    {
+        "posNumber": "b5028",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "948 mm"
+    },
+    {
+        "posNumber": "b5029",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "806 mm"
+    },
+    {
+        "posNumber": "br1",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "6541 mm"
+    },
+    {
+        "posNumber": "br2",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "3072 mm"
+    },
+    {
+        "posNumber": "br3",
+        "profile": "RHS80*3.6",
+        "quantity": 4,
+        "length": "3074 mm"
+    },
+    {
+        "posNumber": "br4",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "6539 mm"
+    },
+    {
+        "posNumber": "br5",
+        "profile": "RHS80*3.6",
+        "quantity": 4,
+        "length": "3073 mm"
+    },
+    {
+        "posNumber": "br6",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "6540 mm"
+    },
+    {
+        "posNumber": "br7",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "6541 mm"
+    },
+    {
+        "posNumber": "br13",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "6540 mm"
+    },
+    {
+        "posNumber": "br14",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "6540 mm"
+    },
+    {
+        "posNumber": "br16",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "2984 mm"
+    },
+    {
+        "posNumber": "br17",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "6356 mm"
+    },
+    {
+        "posNumber": "br19",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "3073 mm"
+    },
+    {
+        "posNumber": "br20",
+        "profile": "RHS80*3.6",
+        "quantity": 1,
+        "length": "3071 mm"
+    },
+    {
+        "posNumber": "br21",
+        "profile": "RHS80*3.6",
+        "quantity": 2,
+        "length": "2986 mm"
+    },
+    {
+        "posNumber": "c3",
+        "profile": "HEA220",
+        "quantity": 12,
+        "length": "3028 mm"
+    },
+    {
+        "posNumber": "c4",
+        "profile": "HEA220",
+        "quantity": 1,
+        "length": "3028 mm"
+    },
+    {
+        "posNumber": "c6",
+        "profile": "HEA220",
+        "quantity": 5,
+        "length": "3028 mm"
+    },
+    {
+        "posNumber": "c7",
+        "profile": "HEA220",
+        "quantity": 6,
+        "length": "3028 mm"
+    },
+    {
+        "posNumber": "c8",
+        "profile": "HEA260",
+        "quantity": 2,
+        "length": "3039 mm"
+    },
+    {
+        "posNumber": "c11",
+        "profile": "HEA260",
+        "quantity": 1,
+        "length": "3039 mm"
+    },
+    {
+        "posNumber": "c12",
+        "profile": "HEA260",
+        "quantity": 1,
+        "length": "3039 mm"
+    },
+    {
+        "posNumber": "fr2",
+        "profile": "RHS150*6.3",
+        "quantity": 4,
+        "length": "5390 mm"
+    },
+    {
+        "posNumber": "fr8",
+        "profile": "UPN300",
+        "quantity": 14,
+        "length": "4961 mm"
+    },
+    {
+        "posNumber": "fr9",
+        "profile": "RHS80*120*5",
+        "quantity": 6,
+        "length": "5710 mm"
+    },
+    {
+        "posNumber": "fr10",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5710 mm"
+    },
+    {
+        "posNumber": "fr11",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5497 mm"
+    },
+    {
+        "posNumber": "fr12",
+        "profile": "RHS80*120*5",
+        "quantity": 2,
+        "length": "5495 mm"
+    },
+    {
+        "posNumber": "fr13",
+        "profile": "RHS120*80*5",
+        "quantity": 8,
+        "length": "5710 mm"
+    },
+    {
+        "posNumber": "fr14",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "5495 mm"
+    },
+    {
+        "posNumber": "fr15",
+        "profile": "RHS120*80*5",
+        "quantity": 2,
+        "length": "5497 mm"
+    },
+    {
+        "posNumber": "nut1",
+        "profile": "NUT_M24",
+        "quantity": 224,
+        "length": "30 mm"
+    }
+]
