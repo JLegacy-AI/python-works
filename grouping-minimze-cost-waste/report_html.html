@@ -1,0 +1,6420 @@
+<html><head></head><body><style>
+
+  /* Embed Calibri Font */
+  @font-face {
+    font-family: "Calibri";
+    src: url("font/Calibri.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@page {
+    size: A4;
+    margin: 10mm 20mm 20mm 20mm; /* Top, right, bottom, left */
+
+    @frame footer_content { 
+        -pdf-frame-content: footer_content; /* Connect to footer content */
+        bottom: 0; /* Stick to the bottom of the page */
+        height: 10mm; /* Ensure a fixed height for the footer */
+        margin: 0px 20mm 0px 20mm;
+    }
+  }
+
+  body{
+    padding: 50px;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1#overview {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
+  }
+
+  #overview-table {
+    margin-bottom: 30px;
+    width: 600px;
+  }
+
+  tr td {
+    padding: 1px 0px 1px 0px; 
+  }
+
+  #overview-table td, #overview-table th {
+    text-align: left;
+  }
+
+  #overview-table td:first-child {
+    font-weight: 600;
+    width: 100px;
+  }
+
+  #overview-table td:last-child {
+    word-wrap: break-word;
+    width: 600px;
+  }
+  
+  .top-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 0px;
+  }
+  
+  .bottom-border-m{
+    font-size: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  #footer_content {
+    position: fixed;
+    bottom: 3mm;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    border-top: 1px solid #797979;
+    padding-top: 2mm;
+  }
+
+  #left {
+    text-align: left;
+    padding-top: 2px;
+  }
+
+  #right{
+    text-align: right;
+    padding-top: 2px;
+  }
+
+  .rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .ltr {
+    direction: ltr;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+</style>
+<h1 class="top-header">Pro Nesting | Smarter steel fabrication</h1>
+<div class="bottom-border-m">Get instant, tailored cutting plans that maximize every piece of profile steel and cut down material waste.</div>
+<h1 id="overview">Overview and Summary</h1>
+<table id="overview-table">
+  <tbody>
+    <tr>
+      <td>Project Name</td>
+      
+      <td class="rtl">זהו טקסט בעברית שיומר ל</td>
+      
+    </tr>
+    <tr>
+      <td>Date Generated</td>
+      <td>2024-11-21</td>
+    </tr>
+    <tr>
+      <td>Total Profiles Type</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Total Length (m)</td>
+      <td>1340.0</td>
+    </tr>
+    <tr>
+      <td>Total Waste (m)</td>
+      <td>66.792</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr style="margin-top: 40px;">
+      <td>Total Cuts</td>
+      <td>859</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div id="footer_content">
+    <table>
+      <tbody>
+      <tr style="padding: 2px;">
+      <td id="left">page number <pdf:pagenumber /> of <pdf:pagecount /></td>
+      <td id="right">This Profile nesting made by ProNesting.com</td>
+    </tr>
+    </tbody>
+    </table>
+</div><style>
+
+
+
+  /* Reset and General Font */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Calibri";
+    line-height: 0px;
+  }
+
+  /* Body Padding */
+  body {
+    padding: 50px;
+  }
+
+  /* Heading Styling */
+  h1#cutlist {
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    padding: 3px 0px 3px 0px; 
+    margin-bottom: 20px;
+  }
+
+  /* Cutlist Table Styling */
+  #cutlist-table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    display: inline-table; /* Makes table width adjust based on content */
+    min-width: 50pt; /* Ensures the table has a minimum width, adjust as needed */
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+
+  /* Table Cell Styling */
+  #cutlist-table tbody tr td {
+    border-bottom: 1px solid black;
+    text-align: left;
+    width: 100px;
+    padding: 3px 0px 3px 0px; 
+  }
+
+  /* Ensuring Proper Spacing for Column Headers */
+  .cutlist-head {
+    text-align: left;
+    font-weight: bold;
+    padding: 3px 0px 3px 0px;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .cutlist-table-head-row{
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
+    border-bottom: 1px solid black; 
+  }
+
+</style>
+
+<h1 id="cutlist">Material and Cut List</h1>
+<table id="cutlist-table">
+  <thead>
+    <tr class="cutlist-table-head-row" style="padding: 3px 0px 3px 0px; ">
+      <th class="cutlist-head">Profile Type</th>
+      <th class="cutlist-head">Stock Length (mm)</th>
+      <th class="cutlist-head">Quantity</th>
+      <th class="cutlist-head">Total Length (m)</th>
+      <th class="cutlist-head">Est Waste (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">HEA220</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">5</td>
+        <td style="width: 100px">60.0</td>
+        <td style="width: 80px">1.12</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">HEA220</td>
+        <td style="width: 120px">10000.0</td>
+        <td style="width: 70px">3</td>
+        <td style="width: 100px">30.0</td>
+        <td style="width: 80px">9.16</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">HEA260</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">12.0</td>
+        <td style="width: 80px">6.59</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">HEA260</td>
+        <td style="width: 120px">4000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">4.0</td>
+        <td style="width: 80px">24.02</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">IPE240</td>
+        <td style="width: 120px">6000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">6.0</td>
+        <td style="width: 80px">30.93</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">L70*7</td>
+        <td style="width: 120px">4000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">4.0</td>
+        <td style="width: 80px">84.25</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">NUT_M24</td>
+        <td style="width: 120px">8000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">8.0</td>
+        <td style="width: 80px">16.0</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS100*5</td>
+        <td style="width: 120px">6000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">6.0</td>
+        <td style="width: 80px">25.33</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS120*5</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">13</td>
+        <td style="width: 100px">156.0</td>
+        <td style="width: 80px">4.48</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS120*5</td>
+        <td style="width: 120px">4000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">4.0</td>
+        <td style="width: 80px">21.43</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS120*80*5</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">18</td>
+        <td style="width: 100px">216.0</td>
+        <td style="width: 80px">1.32</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS120*80*5</td>
+        <td style="width: 120px">8000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">8.0</td>
+        <td style="width: 80px">11.88</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS150*6.3</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">4</td>
+        <td style="width: 100px">48.0</td>
+        <td style="width: 80px">7.92</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS160*80*5</td>
+        <td style="width: 120px">4000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">4.0</td>
+        <td style="width: 80px">27.2</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS200*100*6.3</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">12.0</td>
+        <td style="width: 80px">3.39</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS200*100*6.3</td>
+        <td style="width: 120px">4000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">4.0</td>
+        <td style="width: 80px">20.72</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS250*150*6.3</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">6</td>
+        <td style="width: 100px">72.0</td>
+        <td style="width: 80px">11.42</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS40*3.2</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">6</td>
+        <td style="width: 100px">72.0</td>
+        <td style="width: 80px">0.43</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS40*3.2</td>
+        <td style="width: 120px">8000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">8.0</td>
+        <td style="width: 80px">15.02</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS50*5</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">2</td>
+        <td style="width: 100px">24.0</td>
+        <td style="width: 80px">1.33</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS50*5</td>
+        <td style="width: 120px">8000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">8.0</td>
+        <td style="width: 80px">12.0</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS60*120*3.6</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">6</td>
+        <td style="width: 100px">72.0</td>
+        <td style="width: 80px">7.02</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS60*5</td>
+        <td style="width: 120px">4000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">4.0</td>
+        <td style="width: 80px">2.0</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS80*120*5</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">18</td>
+        <td style="width: 100px">216.0</td>
+        <td style="width: 80px">7.83</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS80*3.6</td>
+        <td style="width: 120px">12000.0</td>
+        <td style="width: 70px">11</td>
+        <td style="width: 100px">132.0</td>
+        <td style="width: 80px">0.91</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">RHS80*3.6</td>
+        <td style="width: 120px">10000.0</td>
+        <td style="width: 70px">1</td>
+        <td style="width: 100px">10.0</td>
+        <td style="width: 80px">4.74</td>
+      </tr>
+    
+      <tr style="padding: 3px 0px 3px 0px;">
+        <td class="bold" style="width: 120px">UPN300</td>
+        <td style="width: 120px">10000.0</td>
+        <td style="width: 70px">14</td>
+        <td style="width: 100px">140.0</td>
+        <td style="width: 80px">0.78</td>
+      </tr>
+    
+  </tbody>
+</table><style>
+
+  /* Heading Styling */
+  h1.stock {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
+    line-height: 0px;
+  }
+
+  /* Overview Table Styling */
+  .overview-table {
+    margin-bottom: 30px;
+    width: 300px;
+  }
+
+  .overview-table td {
+    border-bottom: 1px solid black;
+    padding: 3px 0px 3px 0px; 
+    text-align: left;
+  }
+
+  .overview-table td:first-child {
+    width: 100px;
+  }
+
+  .overview-table td:last-child {
+    padding-left: 20px;
+    width: 200px
+  }
+
+  /* Stock Table Styling */
+  .stock-table {
+    margin-bottom: 50px;
+    border-collapse: collapse;
+  }
+
+  .stock-table th, .stock-table td {
+    border-bottom: 1px solid black;
+    padding: 3px 0px 3px 0px; 
+    text-align: left;
+  }
+
+  .stock-table > thead > tr > th{
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
+  }
+
+  .stock-table th {
+    font-weight: bold;
+  }
+
+  .stock-table td {
+    width: 130px;
+  }
+
+</style>
+
+<h1 class="stock">Cut List and Optimizations</h1>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN1</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">50.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b17</td>
+          <td>1880.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b24</td>
+          <td>493.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c3</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">50.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b17</td>
+          <td>1880.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b24</td>
+          <td>493.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c3</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">50.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b17</td>
+          <td>1880.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b24</td>
+          <td>493.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c3</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN4</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">46.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b10</td>
+          <td>165.0</td>
+          <td style="width: 80px;">6</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b17</td>
+          <td>1880.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c3</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">474.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b10</td>
+          <td>165.0</td>
+          <td style="width: 80px;">6</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b9</td>
+          <td>121.0</td>
+          <td style="width: 80px;">12</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c4</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c6</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">916.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c6</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN7</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">916.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c7</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN8</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA220</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">916.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c7</td>
+          <td>3028.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN9</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA260</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">791.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b20</td>
+          <td>400.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b21</td>
+          <td>356.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b22</td>
+          <td>123.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b23</td>
+          <td>167.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c11</td>
+          <td>3039.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c8</td>
+          <td>3039.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN10</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">HEA260</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">4000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">961.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>c12</td>
+          <td>3039.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN11</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">IPE240</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">6000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1856.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b8</td>
+          <td>296.0</td>
+          <td style="width: 80px;">14</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN12</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">L70*7</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">4000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">3370.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b73</td>
+          <td>90.0</td>
+          <td style="width: 80px;">7</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN13</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">NUT_M24</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">8000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1280.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>nut1</td>
+          <td>30.0</td>
+          <td style="width: 80px;">224</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN14</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS100*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">6000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1520.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5008</td>
+          <td>530.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5009</td>
+          <td>590.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN15</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">489.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b91</td>
+          <td>731.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN16</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">489.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b91</td>
+          <td>731.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN17</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">495.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b93</td>
+          <td>725.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN18</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">495.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b93</td>
+          <td>725.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN19</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1220.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN20</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1220.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN21</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1220.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b42</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN22</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">73.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b12</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b44</td>
+          <td>5177.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN23</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">73.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b12</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b44</td>
+          <td>5177.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN24</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">73.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b12</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b44</td>
+          <td>5177.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN25</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">77.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b12</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b43</td>
+          <td>5175.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN26</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">77.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b12</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b43</td>
+          <td>5175.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN27</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">989.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b12</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b14</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN28</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">4000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">857.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b13</td>
+          <td>1570.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b15</td>
+          <td>1573.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN29</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">54.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr13</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN30</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">54.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr13</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN31</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">54.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr13</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN32</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">54.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr13</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN33</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">174.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b52</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b55</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN34</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">174.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b182</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b56</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN35</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">264.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b64</td>
+          <td>5605.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN36</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">394.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b68</td>
+          <td>5540.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN37</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">394.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b68</td>
+          <td>5540.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN38</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">434.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b65</td>
+          <td>5520.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN39</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">24.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b99</td>
+          <td>456.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr15</td>
+          <td>5497.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN40</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">28.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b99</td>
+          <td>456.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr14</td>
+          <td>5495.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN41</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">28.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b57</td>
+          <td>5460.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN42</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">48.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b57</td>
+          <td>5460.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b58</td>
+          <td>5440.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN43</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">76.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b53</td>
+          <td>5435.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b54</td>
+          <td>5437.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN44</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">294.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b67</td>
+          <td>5327.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN45</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">298.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b66</td>
+          <td>5325.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN46</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">0.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b59</td>
+          <td>5245.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b60</td>
+          <td>5247.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b99</td>
+          <td>456.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN47</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS120*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">8000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">950.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b100</td>
+          <td>456.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b49</td>
+          <td>446.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b50</td>
+          <td>446.0</td>
+          <td style="width: 80px;">5</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b51</td>
+          <td>446.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b7</td>
+          <td>526.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b99</td>
+          <td>456.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN48</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">140.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b128</td>
+          <td>1080.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b76</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN49</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1220.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b76</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN50</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1220.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr2</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN51</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1220.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr2</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN52</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS160*80*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">4000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1088.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b92</td>
+          <td>731.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b94</td>
+          <td>725.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN53</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS200*100*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">407.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b124</td>
+          <td>664.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b78</td>
+          <td>659.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b79</td>
+          <td>695.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b80</td>
+          <td>720.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b85</td>
+          <td>974.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b86</td>
+          <td>663.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b87</td>
+          <td>726.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b88</td>
+          <td>731.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b89</td>
+          <td>726.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN54</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS200*100*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">4000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">829.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b1000</td>
+          <td>635.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b121</td>
+          <td>634.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b77</td>
+          <td>633.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN55</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS250*150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1228.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b45</td>
+          <td>5386.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN56</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS250*150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1228.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b45</td>
+          <td>5386.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN57</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS250*150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1228.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b45</td>
+          <td>5386.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN58</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS250*150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1228.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b45</td>
+          <td>5386.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b48</td>
+          <td>5386.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN59</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS250*150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1654.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b47</td>
+          <td>5173.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN60</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS250*150*6.3</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1658.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b46</td>
+          <td>5171.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN61</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">40.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5001</td>
+          <td>5620.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">5</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN62</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">40.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5001</td>
+          <td>5620.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">5</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN63</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">80.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">5</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b69</td>
+          <td>5600.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN64</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">80.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">5</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b69</td>
+          <td>5600.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN65</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">34.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">8</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b71</td>
+          <td>5407.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN66</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">38.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">8</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b70</td>
+          <td>5405.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN67</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS40*3.2</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">8000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1202.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b137</td>
+          <td>141.0</td>
+          <td style="width: 80px;">36</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5016</td>
+          <td>144.0</td>
+          <td style="width: 80px;">7</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5017</td>
+          <td>142.0</td>
+          <td style="width: 80px;">3</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5018</td>
+          <td>144.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN68</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS50*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">160.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b74</td>
+          <td>320.0</td>
+          <td style="width: 80px;">37</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN69</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS50*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">160.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b74</td>
+          <td>320.0</td>
+          <td style="width: 80px;">37</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN70</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS50*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">8000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">960.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b74</td>
+          <td>320.0</td>
+          <td style="width: 80px;">22</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN71</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*120*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">700.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b38</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN72</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*120*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">700.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b38</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN73</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*120*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">700.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b38</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b41</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN74</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*120*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">700.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b181</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN75</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*120*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1126.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b40</td>
+          <td>5437.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b98</td>
+          <td>5437.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN76</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*120*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1130.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b39</td>
+          <td>5435.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b97</td>
+          <td>5435.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN77</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS60*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">4000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">80.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b6</td>
+          <td>280.0</td>
+          <td style="width: 80px;">14</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN78</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">580.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr9</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN79</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">580.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr9</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN80</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">580.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr9</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN81</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">580.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr10</td>
+          <td>5710.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN82</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">700.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b101</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b102</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN83</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">700.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b102</td>
+          <td>5650.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN84</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">790.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b114</td>
+          <td>5605.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN85</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">920.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b115</td>
+          <td>5540.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN86</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">920.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b115</td>
+          <td>5540.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN87</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">960.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b118</td>
+          <td>5520.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN88</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1006.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr11</td>
+          <td>5497.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN89</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1010.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr12</td>
+          <td>5495.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN90</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1080.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b109</td>
+          <td>5460.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN91</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1123.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b104</td>
+          <td>5437.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b106</td>
+          <td>5440.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN92</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1175.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b103</td>
+          <td>5435.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b105</td>
+          <td>5390.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN93</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1346.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b116</td>
+          <td>5327.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN94</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1350.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b117</td>
+          <td>5325.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN95</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*120*5</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">1508.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b107</td>
+          <td>5245.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b108</td>
+          <td>5247.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN96</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">100.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b1</td>
+          <td>948.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b34</td>
+          <td>389.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b83</td>
+          <td>948.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br1</td>
+          <td>6541.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br3</td>
+          <td>3074.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN97</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">100.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b34</td>
+          <td>389.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b83</td>
+          <td>948.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br3</td>
+          <td>3074.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br7</td>
+          <td>6541.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN98</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">101.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b34</td>
+          <td>389.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b83</td>
+          <td>948.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br3</td>
+          <td>3074.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br6</td>
+          <td>6540.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN99</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">101.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b34</td>
+          <td>389.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b83</td>
+          <td>948.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br13</td>
+          <td>6540.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br3</td>
+          <td>3074.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN100</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">135.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5023</td>
+          <td>948.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b81</td>
+          <td>356.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b83</td>
+          <td>948.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br14</td>
+          <td>6540.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br5</td>
+          <td>3073.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN101</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">136.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5023</td>
+          <td>948.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b81</td>
+          <td>356.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br4</td>
+          <td>6539.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br5</td>
+          <td>3073.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN102</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">58.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5019</td>
+          <td>617.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5024</td>
+          <td>948.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br17</td>
+          <td>6356.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br5</td>
+          <td>3073.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN103</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">58.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5019</td>
+          <td>617.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5028</td>
+          <td>948.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br17</td>
+          <td>6356.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br5</td>
+          <td>3073.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN104</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">13.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b190</td>
+          <td>806.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b30</td>
+          <td>802.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5029</td>
+          <td>806.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b81</td>
+          <td>356.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br19</td>
+          <td>3073.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br2</td>
+          <td>3072.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN105</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">197.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b30</td>
+          <td>802.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b31</td>
+          <td>801.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b81</td>
+          <td>356.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br20</td>
+          <td>3071.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br21</td>
+          <td>2986.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN106</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">12000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">202.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b120</td>
+          <td>616.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b123</td>
+          <td>781.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b183</td>
+          <td>766.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b184</td>
+          <td>764.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b185</td>
+          <td>748.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5014</td>
+          <td>766.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5015</td>
+          <td>772.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5026</td>
+          <td>617.0</td>
+          <td style="width: 80px;">1</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>br16</td>
+          <td>2984.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN107</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">RHS80*3.6</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">474.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b33</td>
+          <td>343.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5020</td>
+          <td>356.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5021</td>
+          <td>356.0</td>
+          <td style="width: 80px;">4</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5022</td>
+          <td>614.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b5025</td>
+          <td>615.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b81</td>
+          <td>356.0</td>
+          <td style="width: 80px;">8</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN108</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN109</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN110</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN111</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN112</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN113</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN114</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>b11</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN115</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN116</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN117</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN118</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN119</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN120</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+  <!-- Overview Table -->
+  <table class="overview-table">
+    <tbody>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">SN121</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">UPN300</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">10000.0</td>
+      </tr>
+      <tr>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">78.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Stock Details Table -->
+  <table class="stock-table">
+    <thead>
+      <tr>
+        <th class="stock-head">Pos Number</th>
+        <th class="stock-head">Cut Lengths (mm)</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr style="padding: 3px 0px 3px 0px; ">
+          <td>fr8</td>
+          <td>4961.0</td>
+          <td style="width: 80px;">2</td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+<h1 style="margin-top: 20px; margin-bottom: 20px;">END OF REPORT</h1></body></html>

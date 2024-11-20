@@ -46,7 +46,6 @@
 
   .stock-table > thead > tr > th{
     background-color: #f2f2f2;
-    font-size: 12px;
     padding: 3px 0px 3px 0px; 
   }
 
@@ -66,20 +65,20 @@
   <table class="overview-table">
     <tbody>
       <tr>
-        <td style="font-weight: 600; ">Stock Profile POS</td>
-        <td>{{ profileCut["stockProfilePOS"] }}</td>
+        <td style="font-weight: 600; width:100px;">Stock Profile POS</td>
+        <td style="width:120px;">{{ profileCut["stockProfilePOS"] }}</td>
       </tr>
       <tr>
-        <td style="font-weight: 600; ">Profile Type</td>
-        <td>{{ profileCut["profileType"] }}</td>
+        <td style="font-weight: 600; width:100px;">Profile Type</td>
+        <td style="width:120px;">{{ profileCut["profileType"] }}</td>
       </tr>
       <tr>
-        <td style="font-weight: 600; ">Stock Length</td>
-        <td>{{ profileCut["stockLength"] }}</td>
+        <td style="font-weight: 600; width:100px;">Stock Length</td>
+        <td style="width:120px;">{{ profileCut["stockLength"] }}</td>
       </tr>
       <tr>
-        <td style="font-weight: 600; ">Waste (mm)</td>
-        <td>{{ profileCut["wasteMM"] }}</td>
+        <td style="font-weight: 600; width:100px;">Waste (mm)</td>
+        <td style="width:120px;">{{ profileCut["wasteMM"] }}</td>
       </tr>
     </tbody>
   </table>
@@ -90,7 +89,7 @@
       <tr>
         <th class="stock-head">Pos Number</th>
         <th class="stock-head">Cut Lengths (mm)</th>
-        <th class="stock-head" style="text-align: right; padding-right: 5px;">Quantity</th>
+        <th class="stock-head" style="width: 80px;">Quantity</th>
       </tr>
     </thead>
     <tbody>
@@ -98,7 +97,7 @@
         <tr style="padding: 3px 0px 3px 0px; ">
           <td>{{ cut["posNumber"] }}</td>
           <td>{{ cut["cutLength"] }}</td>
-          <td style="text-align: right; padding-right: 5px;">{{ cut["quantity"] }}</td>
+          <td style="width: 80px;">{{ cut["quantity"] }}</td>
         </tr>
       {% endfor %}
     </tbody>

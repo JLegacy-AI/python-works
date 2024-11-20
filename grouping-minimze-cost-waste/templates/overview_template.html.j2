@@ -1,5 +1,14 @@
 <style>
 
+  /* Embed Calibri Font */
+  @font-face {
+    font-family: "Calibri";
+    src: url("font/Calibri.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
 @page {
     size: A4;
     margin: 10mm 20mm 20mm 20mm; /* Top, right, bottom, left */
@@ -20,7 +29,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Arial', 'Tahoma', sans-serif;
   }
 
   h1#overview {
@@ -46,12 +55,12 @@
 
   #overview-table td:first-child {
     font-weight: 600;
-    width: 200px;
+    width: 100px;
   }
 
   #overview-table td:last-child {
     word-wrap: break-word;
-    width: 400px;
+    width: 600px;
   }
   
   .top-header {
@@ -87,8 +96,23 @@
     padding-top: 2px;
   }
 
+  .rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .ltr {
+    direction: ltr;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
 </style>
-<h1 class="top-header">Pro Nesting | Smarter steel fabrication</h1>
+<div style="width: 200px; height: 50px; margin-left: 0px; margin-top:0px; margin-bottom: 0px;">
+  <img style="margin-left: 0px; margin-top:0px; margin-bottom: 0px;" src="pronesting_logo.jpg" alt="Logo" width="200" height="50">
+</div>
 <div class="bottom-border-m">Get instant, tailored cutting plans that maximize every piece of profile steel and cut down material waste.</div>
 <h1 id="overview">Overview and Summary</h1>
 <table id="overview-table">
