@@ -1,17 +1,17 @@
 <style>
-  @font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+
+@page {
+    size: A4;
+    margin: 10mm 20mm 20mm 20mm; /* Top, right, bottom, left */
+
+    @frame footer_content { 
+        -pdf-frame-content: footer_content; /* Connect to footer content */
+        bottom: 0; /* Stick to the bottom of the page */
+        height: 10mm; /* Ensure a fixed height for the footer */
+        margin: 0px 20mm 0px 20mm;
+    }
   }
-  @font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-  }
-    
+
   body{
     padding: 50px;
   }
@@ -24,13 +24,20 @@
   }
 
   h1#overview {
+    font-size: 12px;
     font-weight: bold;
     margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
   }
 
   #overview-table {
     margin-bottom: 30px;
     width: 600px;
+  }
+
+  tr td {
+    padding: 1px 0px 1px 0px; 
   }
 
   #overview-table td, #overview-table th {
@@ -44,12 +51,45 @@
 
   #overview-table td:last-child {
     word-wrap: break-word;
-    width: 400px
+    width: 400px;
   }
- 
- 
-</style>
+  
+  .top-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 0px;
+  }
+  
+  .bottom-border-m{
+    font-size: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+  }
 
+  #footer_content {
+    position: fixed;
+    bottom: 3mm;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    border-top: 1px solid #797979;
+    padding-top: 2mm;
+  }
+
+  #left {
+    text-align: left;
+    padding-top: 2px;
+  }
+
+  #right{
+    text-align: right;
+    padding-top: 2px;
+  }
+
+</style>
+<h1 class="top-header">Pro Nesting | Smarter steel fabrication</h1>
+<div class="bottom-border-m">Get instant, tailored cutting plans that maximize every piece of profile steel and cut down material waste.</div>
 <h1 id="overview">Overview and Summary</h1>
 <table id="overview-table">
   <tbody>
@@ -83,3 +123,15 @@
     </tr>
   </tbody>
 </table>
+
+
+<div id="footer_content">
+    <table>
+      <tbody>
+      <tr style="padding: 2px;">
+      <td id="left">page number <pdf:pagenumber /> of <pdf:pagecount /></td>
+      <td id="right">This Profile nesting made by ProNesting.com</td>
+    </tr>
+    </tbody>
+    </table>
+</div>

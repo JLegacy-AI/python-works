@@ -1,22 +1,14 @@
 <style>
-  @font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-  }
 
   /* Heading Styling */
   h1.stock {
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 10px;
+    font-size: 12px;
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
+    line-height: 0px;
   }
 
   /* Overview Table Styling */
@@ -27,7 +19,7 @@
 
   .overview-table td {
     border-bottom: 1px solid black;
-    padding: 3px 0px 0px 0px;
+    padding: 3px 0px 3px 0px; 
     text-align: left;
   }
 
@@ -48,8 +40,14 @@
 
   .stock-table th, .stock-table td {
     border-bottom: 1px solid black;
-    padding: 2px;
+    padding: 3px 0px 3px 0px; 
     text-align: left;
+  }
+
+  .stock-table > thead > tr > th{
+    background-color: #f2f2f2;
+    font-size: 12px;
+    padding: 3px 0px 3px 0px; 
   }
 
   .stock-table th {
@@ -59,6 +57,7 @@
   .stock-table td {
     width: 130px;
   }
+
 </style>
 
 <h1 class="stock">Cut List and Optimizations</h1>
@@ -96,7 +95,7 @@
     </thead>
     <tbody>
       {% for cut in profileCut["cuts"] %}
-        <tr>
+        <tr style="padding: 3px 0px 3px 0px; ">
           <td>{{ cut["posNumber"] }}</td>
           <td>{{ cut["cutLength"] }}</td>
           <td style="text-align: right; padding-right: 5px;">{{ cut["quantity"] }}</td>
@@ -105,3 +104,5 @@
     </tbody>
   </table>
 {% endfor %}
+
+<h1 style="margin-top: 20px; margin-bottom: 20px;">END OF REPORT</h1>

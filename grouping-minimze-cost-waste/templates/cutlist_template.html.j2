@@ -1,16 +1,12 @@
 <style>
-  /* Embed Poppins Font */
+
+  /* Embed Calibri Font */
   @font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Regular.ttf") format("truetype");
+    font-family: "Calibri";
+    src: url("font/Calibri.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("Poppins/Poppins-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
+    font-display: swap;
   }
 
   /* Reset and General Font */
@@ -18,7 +14,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family:  "Calibri";
+    line-height: 0px;
   }
 
   /* Body Padding */
@@ -31,6 +28,10 @@
     margin-top: 50px;
     font-weight: bold;
     margin-bottom: 10px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    padding: 3px 0px 3px 0px; 
+    margin-bottom: 20px;
   }
 
   /* Cutlist Table Styling */
@@ -43,33 +44,38 @@
     margin-bottom: 50px;
   }
 
-  /* Table Header Styling */
 
   /* Table Cell Styling */
   #cutlist-table tbody tr td {
     border-bottom: 1px solid black;
     text-align: left;
-    padding: 3px 0px 0px 0px;
     width: 100px;
+    padding: 3px 0px 3px 0px; 
   }
 
   /* Ensuring Proper Spacing for Column Headers */
   .cutlist-head {
-    padding: 1px;
     text-align: left;
     font-weight: bold;
-    border-bottom: 1px solid black;
+    padding: 3px 0px 3px 0px;
   }
 
   .bold{
     font-weight: bold;
   }
+
+  .cutlist-table-head-row{
+    background-color: #f2f2f2;
+    padding: 3px 0px 3px 0px; 
+    border-bottom: 1px solid black; 
+  }
+
 </style>
 
 <h1 id="cutlist">Material and Cut List</h1>
 <table id="cutlist-table">
   <thead>
-    <tr>
+    <tr class="cutlist-table-head-row" style="padding: 3px 0px 3px 0px; ">
       <th class="cutlist-head">Profile Type</th>
       <th class="cutlist-head">Stock Length (mm)</th>
       <th class="cutlist-head">Quantity</th>
@@ -79,7 +85,7 @@
   </thead>
   <tbody>
     {% for row in data %}
-      <tr>
+      <tr style="padding: 3px 0px 3px 0px;">
         <td class="bold" style="width: 120px">{{ row[0] }}</td>
         <td style="width: 120px">{{ row[1] }}</td>
         <td style="width: 70px">{{ row[2] }}</td>
