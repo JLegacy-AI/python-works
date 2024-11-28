@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance Report</title>
+    <style>
+      /* General Reset and Styling */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 50px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fafafa;
+      }
+
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header Styling */
+      h1 {
+        font-size: 24px;
+        color: #444;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+
+      /* Block Section Styling */
+      .block-section {
+        padding: 20px;
+        margin-bottom: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        page-break-inside: avoid;
+      }
+
+      .header {
+        margin-bottom: 20px;
+      }
+
+      .header p {
+        margin: 5px 0;
+        font-size: 14px;
+        text-align: left;
+      }
+
+      .header p strong {
+        color: #555;
+      }
+
+      /* Table Styling */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #444;
+      }
+
+      th,
+      td {
+        padding: 10px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        color: #333;
+        font-weight: bold;
+      }
+
+      td {
+        background-color: #fff;
+      }
+
+      /* Alternating Row Colors */
+      tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+      }
+
+      /* Page Margins for Print */
+      @page {
+        margin: 0.6in 0.5in 0.5in 0.5in;
+      }
+
+      @media print {
+        body {
+          margin: 0; /* Remove default margin for the body */
+          padding: 0px; /* Remove default padding for the body */
+        }
+      }
+
+      /* Page Breaks for Print */
+      @media print {
+        .block-section {
+          page-break-inside: avoid;
+        }
+
+        .page-break {
+          page-break-before: always;
+        }
+      }
+
+      .custom-table {
+        width: fit-content;
+        margin-top: 5px;
+      }
+
+      .custom-table tbody > tr > td {
+        margin: 0px;
+        background-color: none;
+      }
+
+      .custom-table tbody > tr > :nth-child(1) {
+        min-width: 150px;
+      }
+      .custom-table tbody > tr > :nth-child(2) {
+        min-width: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attendance Report</h1>
+
+    <div class="header">
+      <h1 style="text-align: left; margin-top: 10px">Overall Summary</h1>
+      <table>
+        <thead>
+          <tr>
+            <th><strong>Total Blocks</strong></th>
+            <th><strong>Total Present</strong></th>
+            <th><strong>Total Absent</strong></th>
+            <th><strong>Total Students</strong></th>
+            <th><strong>Copy Cases</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>block.totalBlocks</td>
+            <td>block.totalPresent</td>
+            <td>block.totalAbsent</td>
+            <td>block.totalStudents</td>
+            <td>block.totalCopyCase</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center">
+      <hr
+        style="
+          width: 100%;
+          height: 1px !important;
+          background-color: #ddd;
+          border: none;
+        "
+      />
+      <span style="font-size: large; margin: 10px"
+        ><strong>block.blockName</strong></span
+      >
+      <hr
+        style="
+          width: 100%;
+          height: 1px !important;
+          background-color: #ddd;
+          border: none;
+        "
+      />
+    </div>
+
+    <h1 style="text-align: left; margin-top: 10px">Summary</h1>
+    <table class="custom-table">
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td><strong>Block</strong></td>
+          <td><strong>block.blockName</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Subject</strong></td>
+          <td>block.subjectName</td>
+        </tr>
+        <tr>
+          <td><strong>Invigilator</strong></td>
+          <td>block.invigilatorName</td>
+        </tr>
+
+        <tr>
+          <td><strong>Present</strong></td>
+          <td>block.totalPresent</td>
+        </tr>
+        <tr>
+          <td><strong>Absent</strong></td>
+          <td>block.totalAbsent</td>
+        </tr>
+        <tr>
+          <td><strong>Total Students</strong></td>
+          <td>block.totalStudents</td>
+        </tr>
+        <tr>
+          <td><strong>Total Copy Cases</strong></td>
+          <td>block.totalCopyCase</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 style="text-align: left; margin-top: 10px">Attendance</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Present</th>
+          <th>Answer Sheet Number</th>
+          <th>Copy Case</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example Student Row -->
+        <tr>
+          <td>student.studentId</td>
+          <td>student.present ? 'Present' : 'Absent'</td>
+          <td>student.answerSheetNumber || '-'</td>
+          <td>student.copyCase ? 'Yes' : 'No'</td>
+          <td>student.remarks || '-'</td>
+        </tr>
+        <!-- Additional Rows... -->
+      </tbody>
+    </table>
+  </body>
+</html>
